@@ -1,8 +1,8 @@
 /********** Template CSS **********/
 
 :root {
-    --bs-primary: #0D6EFD;
-    --bs-secondary: #0DCAF0;
+    --bs-primary: #9B1B92;
+    --bs-secondary: #00AEEF;
     --bs-dark: #031B4E;
     --bs-light: #F4F8FF;
 }
@@ -434,4 +434,24 @@
 
 .copyright a:hover {
     color: var(--bs-primary);
+}
+
+/* Force Bootstrap utilities to use variables */
+.text-primary { color: var(--bs-primary) !important; }
+.bg-primary { background-color: var(--bs-primary) !important; }
+.btn-primary {
+    background-color: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+    color: #fff !important;
+}
+.btn-primary:hover {
+    background-color: var(--bs-secondary) !important;
+    border-color: var(--bs-secondary) !important;
+}
+.text-secondary { color: var(--bs-secondary) !important; }
+.bg-secondary { background-color: var(--bs-secondary) !important; }
+.btn-secondary {
+    background-color: var(--bs-secondary) !important;
+    border-color: var(--bs-secondary) !important;
+    color: #fff !important;
 }
